@@ -1,12 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="./js/main.js"></script> 
+    <title>bienvenido a play&sing</title>
 </head>
 <body>
-    
+
+  <header>
+
+    <a id="logo" onclick="mostrarMensajeInicial()">
+      <img src="./img/logo.png" title="Logo app">
+    </a>
+
+    <nav>
+
+      <ul>
+        <li><a href="#destacados">Destacados</a></li>
+        <li><a href="#modelos">Modelos</a></li>
+        <li><a href="#galeria">Amenidades</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+      </ul>
+
+    </nav>
+
+    <a id="contacto" href="#footer">
+      <img src="./img/call-us.png" title="Contactanos">
+    </a>
+
+  </header>
+
+  <main>
+
+     <section id="home">
+
+      <div class="home-banner">
+        <h1>Inicio</h1>
+        <h3>Bienvenidos a nuestro sitio de desarrollores e inmobiliarios ISI</h3>
+        <p>Consequat nostrud nisi ut consequat magna id consectetur et minim ex proident cillum.</p>
+      </div>
+    </section>
+
+    <section id="destacados">
+      <h1>Destacados</h1>
+
+      <div class="destacados-container">
+
+        <div class="destacado-info">
+          <img src="./img/casas/modelo2.jpg" alt="Casa modelo 2">
+          <h3>Casa Modelo Más Vendida</h3>
+          <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <p>Descripcion de que es lo que mas valoran los clientes de este modelo.</p>
+          <p>Promociones actuales.</p>
+        </div>
+
+        <div class="clientes-comentarios">
+
+          <div class="comentario">
+
+            <div class="cliente">
+              <img src="./img/clientes/cliente1.jpg" alt="Cliente 1">
+            </div>
+            <div class="cliente-mensaje">
+              <p>Comentario del Cliente 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="cliente-firma">- Cliente Satisfecho 1</p>
+            </div>
+
+          </div>
+
+          <div class="comentario">
+
+            <div class="cliente">
+              <img src="./img/clientes/cliente2.jpg" alt="Cliente 2">
+            </div>
+            <div class="cliente-mensaje">
+              <p>Comentario del Cliente 2. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+              <p class="cliente-firma">- Cliente Satisfecho 2</p>
+            </div>
+
+          </div>
+
+          <div class="comentario">
+
+            <div class="cliente">
+              <img src="./img/clientes/cliente3.jpg" alt="Cliente 3">
+            </div>
+            <div class="cliente-mensaje">
+              <p>Comentario del Cliente 3. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p class="cliente-firma">- Cliente Satisfecho 3</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <section id="modelos">
+      <h1>Modelos de casas</h1>
+      <div class="card-container">
+        <div class="card">
+          
+      <h3>Aqui puedes ver los modelos de casas disponibles.</h3>
+      <p>
+        Consequat nostrud nisi ut consequat magna id consectetur et minim ex proident cillum. Laboris quis enim mollit nisi officia nostrud fugiat incididunt Lorem laboris ex. Nulla excepteur anim et irure dolor exercitation anim eu mollit eu exercitation ullamco sint. Voluptate ut sunt eiusmod do deserunt sint voluptate id eu. Dolore in aute laboris duis aliqua magna aliqua cupidatat tempor voluptate laborum occaecat qui. Commodo aute adipisicing proident officia sint minim et irure consequat. Duis dolore ad est duis aute.
+        Esse qui culpa minim nisi labore laborum est magna laborum qui. Ut nulla nisi dolore aute anim in nostrud aute pariatur dolore sunt deserunt sint ad. Adipisicing cillum anim ut laborum deserunt magna id ea.
+        Excepteur magna labore ullamco in commodo. Id ex aliqua irure quis enim do reprehenderit culpa nostrud. Velit proident amet minim et non reprehenderit. Qui cillum quis sint ad laborum irure.
+      </p>
+    </section>
+
+    <section id="galeria">
+      <h1>Amenidades</h1>
+      <h3>Mostrar galeria</h3>
+      <p>
+        Consequat nostrud nisi ut consequat magna id consectetur et minim ex proident cillum. Laboris quis enim mollit nisi officia nostrud fugiat incididunt Lorem laboris ex. Nulla excepteur anim et irure dolor exercitation anim eu mollit eu exercitation ullamco sint. Voluptate ut sunt eiusmod do deserunt sint voluptate id eu. Dolore in aute laboris duis aliqua magna aliqua cupidatat tempor voluptate laborum occaecat qui. Commodo aute adipisicing proident officia sint minim et irure consequat. Duis dolore ad est duis aute.
+        Esse qui culpa minim nisi labore laborum est magna laborum qui. Ut nulla nisi dolore aute anim in nostrud aute pariatur dolore sunt deserunt sint ad. Adipisicing cillum anim ut laborum deserunt magna id ea.
+        Excepteur magna labore ullamco in commodo. Id ex aliqua irure quis enim do reprehenderit culpa nostrud. Velit proident amet minim et non reprehenderit. Qui cillum quis sint ad laborum irure.
+      </p>
+    </section>
+
+    <section id="ubicacion">
+      <h1>Proceso de compra</h1>
+      <h3>Aqui puedes ver el proceso de compra y contactarnos</h3>
+      <p>
+        Consequat nostrud nisi ut consequat magna id consectetur et minim ex proident cillum. Laboris quis enim mollit nisi officia nostrud fugiat incididunt Lorem laboris ex. Nulla excepteur anim et irure dolor exercitation anim eu mollit eu exercitation ullamco sint. Voluptate ut sunt eiusmod do deserunt sint voluptate id eu. Dolore in aute laboris duis aliqua magna aliqua cupidatat tempor voluptate laborum occaecat qui. Commodo aute adipisicing proident officia sint minim et irure consequat. Duis dolore ad est duis aute.
+        Esse qui culpa minim nisi labore laborum est magna laborum qui. Ut nulla nisi dolore aute anim in nostrud aute pariatur dolore sunt deserunt sint ad. Adipisicing cillum anim ut laborum deserunt magna id ea.
+        Excepteur magna labore ullamco in commodo. Id ex aliqua irure quis enim do reprehenderit culpa nostrud. Velit proident amet minim et non reprehenderit. Qui cillum quis sint ad laborum irure.
+      </p>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <h1>Formulario de contactos</h1>
+    <h3>Contactis adicionales | Redes sociales</h3>
+    <p>Desarrollares e inmobiliarios ISI &copy; 2023</p>
+  </footer>
+
+  <button id="btn-ir-arriba" >
+    <svg viewBox="0 0 24 24">
+      <path d="m4 16 8-8 8 8"></path>
+    </svg>
+  </button>
+
 </body>
 </html>
