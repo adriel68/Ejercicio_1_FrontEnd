@@ -90,6 +90,7 @@ nav li:hover,
 section {
   scroll-margin-top:  90px;
   padding: 45px 90px;
+  
 }
 
 /* tmp: en lo que se termina el resto de las secciones,
@@ -104,13 +105,21 @@ section > h1 {
   font-size: 2rem;
   color: #34495e;
 
-  border-bottom: 5px solid #34495e;
+  border-bottom: 5px solid #AF69EE;
   margin-bottom: 2rem;
 }
 
+.dojacat {
+
+}
+
 p{
-  font-size: 35px;
+  font-size: 30px;
   line-height: 1;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-weight: 600;
+
 }
 
 section {
@@ -155,6 +164,21 @@ section {
 
 /* #endregion */
 
+.artista_destacado img{
+  width: 100%;
+padding-bottom: 1rem;
+
+}
+
+.taylor {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  max-width: 100%;
+  background-color: #E0E1DD;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 /* #region DESTACADOS */
 
@@ -218,6 +242,8 @@ section {
 }
 
 /* #endregion */
+
+
 
 
 /* #region FOOTER */
