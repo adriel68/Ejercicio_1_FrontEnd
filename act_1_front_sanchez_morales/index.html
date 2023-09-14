@@ -1,103 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./img/mine/papapishu_Nurse_head.svg">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <script src="./js/main.js"></script>
+  <script src="./js/main.js" defer></script>
   <title>hola</title>
+
 </head>
 <body>
 
-  <header>
+  <header class="fx-row fx-content-space-between fx-align-items-center">
 
-    <a id="logo" onclick="mostrarMensajeInicial()">
-      <img src="/img/mine/papapishu_Nurse_head.svg" title="Logo app">
+    <a id="logo" class="fx-row" onclick="mostrarMensajeInicial()">
+      <img src="./img/mine/papapishu_Nurse_head.svg" title="Logo app">
     </a>
 
-    <nav>
+    <nav class="fx-row xs-hide fx-align-items-center">
 
-      <ul>
+      <ul class="fx-row fx-content-space-between fx-align-items-center">
         <li><a href="#artista_destacado">artista destacado</a></li>
+        <li><a href="#top_canciones">top de canciones</a></li>
         <li><a href="#prox_eventos">proximos conciertos y eventos</a></li>
-        <li><a href="#top_canciones">top canciones</a></li>
-        <li><a href="#opinion_fans">opiniones de fans</a></li>
+        <li><a href="#destacados">opiniones de fans</a></li>
+        
+        
       </ul>
-
-      <style>
-        ul li a {
-          color: black;
-          font-size: 35px;
-          text-decoration: none; /* Elimina subrayado en los enlaces */
-        }
-      </style>
 
     </nav>
 
-    <a id="contacto" href="#footer">
-      <img src="/img/mine/download.png" title="Contactanos">
+    <a id="contacto" href="#footer" class="fx-row">
+      <img src="./img/mine/download.png" title="Contactanos">
     </a>
 
   </header>
 
   <main>
 
-    <section id="home">
-      <div class="home-banner">
-        <h1 style="font-size: 400px; color: #E0E1DD;">play&sing</h1>
-        <h3 style="font-size: 50px; color: #E0E1DD;">bienvenido al sitio con la musica mas fresca</h3>
+     <section id="home" class="fx-column fx-content-center fx-align-items-center">
+      <div class="home-banner fx-column fx-content-center fx-align-items-center">
+        <h1>play&sing</h1>
+        <h3>bienvenido al sitio con la musica mas fresca</h3>
       </div>
     </section>
-    
 
+    <section id="artista_destacado">
+      <h1>artista destacado</h1>
 
-    <section id="artista_destacado" style="background-image: url(/img/mine/cdbg.gif);">
-      <h1 style="font-size: 70px; color: black;">artista destacado</h1>
-      <div class="card-container">
+      <div class="card-container fx-row fx-xs-column">
         <div class="card">
-          
-      <h3 style="font-size: 50px; color: #000000;">Taylor Swift</h3>
-<br>
-      <img src="/img/mine/taylor-swift-en-mexico-fechas-de-los-conciertos-boletos-setlist.webp" alt="Taylor swift en mexico" height="500" class="taylor">
-      <br>
-      <p style="text-align: justify;">
-        taylor swift continua destacando como un artista sobresaliente en la escena musical, consolidando su posicion a traves de una combinacion de talento innato, creatividad sin limites y un enfoque incansable en su arte. Su reciente exito se ve impulsado por su exitosa gira y la constante salida de albumes que mantienen a sus seguidores inmersos en su musica. Con una impresionante trayectoria que abarca varios generos musicales y una habilidad para conectar con su audiencia a nivel emocional, Swift ha demostrado ser una fuerza duradera en la industria. Con nuevos proyectos en el horizonte, es evidente que su influencia perdurara y su capacidad para evolucionar creativamente continuara sorprendiendo y deleitando a fans y criticos por igual.
-        </p>
+          <img src="./img/mine/taylor-swift-en-mexico-fechas-de-los-conciertos-boletos-setlist.webp" alt="Casa 1">
+          <h3>Taylor Swift</h3>
+          <p>taylor swift continua destacando como un artista sobresaliente en la escena musical, consolidando su posicion a traves de una combinacion de talento innato, creatividad sin limites y un enfoque incansable en su arte. Su reciente exito se ve impulsado por su exitosa gira y la constante salida de albumes que mantienen a sus seguidores inmersos en su musica. Con una impresionante trayectoria que abarca varios generos musicales y una habilidad para conectar con su audiencia a nivel emocional, Swift ha demostrado ser una fuerza duradera en la industria. Con nuevos proyectos en el horizonte, es evidente que su influencia perdurara y su capacidad para evolucionar creativamente continuara sorprendiendo y deleitando a fans y criticos por igual.</p>
+          <button class="btn" id="btn-modelo-1">increible!</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="top_canciones">
+      <h1>top canciones</h1>
+
+      <div class="galeria-container fx-row fx-content-center">
+        <img class="galeria-img" src="./img/mine/dojacat.png" alt="Doja Cat - Paint The Town Red">
+        <img class="galeria-img" src="./img/mine/mileycyruscancion.png" alt="Miley Cyrus - Used To Be Young">
+        <img class="galeria-img" src="./img/mine/taylorcancion.webp" alt="Taylor Swift - Cruel Summer">
+        <img class="galeria-img" src="./img/mine/olivia-rodrigo-3wl-344x344.jpg" alt="Olivia Rodrigo - vampire">
+        <img class="galeria-img" src="./img/mine/don-toliver-kpk-344x344.jpg" alt="Don Toliver - Geronimo">
+      </div>
+
+      <div class="galeria-overlay fx-content-center fx-align-items-center">
+
+        <img src="" alt="Imagen ampliada" class="galeria-overlay-img">
+
+      </div>
 
     </section>
 
-    <section id="prox_eventos"style="background-image: url(/img/mine/bubble1.gif);">
-      <h1 style="font-size: 70px; color: #E0E1DD;">proximos eventos</h1>
-      <h3 style="font-size: 50px; color: #E0E1DD;">no te los pierdas</h3>
-<br>
-<br>
-      <img src="/img/mine/Bonnaroo-Festival-Flyer-EMBED-2023.webp" alt="conciertos proximos" height="80%">
-      <img src="/img/mine/scale.webp" alt="conciertos proximos" height="80%">
-      <img src="/img/mine/19F5E6EA-F1A3-4D6F-9877-48EFD1AF1B51.webp" alt="conciertos proximos" height="80%">
+    <section id="prox_eventos">
+      <h1>proximos conciertos y eventos</h1>
+
+      <div class="galeria-container fx-row fx-content-center">
+        <img class="galeria-img" src="./img/mine/Bonnaroo-Festival-Flyer-EMBED-2023.webp" alt="Bonnaroo">
+        <img class="galeria-img" src="./img/mine/19F5E6EA-F1A3-4D6F-9877-48EFD1AF1B51.webp" alt="Hipnosis">
+        <img class="galeria-img" src="./img/mine/scale.webp" alt="Austin City Limits">
+        <img class="galeria-img" src="./img/mine/festival.jpg" alt="Firefly">
+        <img class="galeria-img" src="./img/mine/festival2.png" alt="Louder than life">
+      </div>
+
+      <div class="galeria-overlay fx-content-center fx-align-items-center">
+
+        <img src="" alt="Imagen ampliada" class="galeria-overlay-img">
+
+      </div>
 
     </section>
 
-    <section id="top_canciones" style="background-image: url(/img/mine/cdbg.gif);">
-      <h1 style="font-size: 70px; color: black;">top canciones</h1>
-      <h3 style="font-size: 50px;">las canciones mas escuchadas de la semana</h3>
-<br>
-<br>
+    <section id="destacados">
+      <h1>opiniones de fans</h1>
 
-      <img src="/img/mine/dojacat.png" alt="doja cat cancion" height="65%">
-    
-      <img src="/img/mine/mileycyruscancion.png" alt="miley cyrus cancion" height="65%">
-      <img src="/img/mine/taylorcancion.webp" alt="taylor swift cancion" height="65%">
+      <div class="destacados-container fx-row fx-xs-column fx-content-space-between fx-align-items-center">
 
-    </section>
-
-    <section id="opinion_fans" style="background-image: url(/img/mine/bubble1.gif);">
-
-      <h1 style="font-size: 70px; color:#E0E1DD;">opiniones de fans</h1>
-      
-      <div class="opinion_fans-container">
-
-        <div class="opinion_fans-info">
-          <img src="/img/mine/papapishu_Nurse_head.svg" alt="logojeje">
+        <div class="destacado-info">
+          <img src="./img/mine/papapishu_Nurse_head.svg" alt="Logo app">
           <h3>play & sing</h3>
           <div class="star-rating">
             <span class="star">&#9733;</span>
@@ -107,15 +113,15 @@
             <span class="star">&#9734;</span>
           </div>
           <p>comentarios de nuestros fans</p>
-          <p>creanles por favor jaja</p>
+          <p>creanles por favor</p>
         </div>
 
-        <div class="clientes-comentarios">
+        <div class="clientes-comentarios fx-column">
 
-          <div class="comentario">
+          <div class="comentario fx-row">
 
             <div class="cliente">
-              <img src="/img/caras/taylor-swift-hannah-montana-the-movie-world-premiere-2009.jpg" alt="Cliente 1">
+              <img src="./img/caras/taylor-swift-hannah-montana-the-movie-world-premiere-2009.jpg" alt="Cliente 1">
             </div>
             <div class="cliente-mensaje">
               <p>la vd algo bien play & sing, me gusta bastante</p>
@@ -124,10 +130,10 @@
 
           </div>
 
-          <div class="comentario">
+          <div class="comentario fx-row">
 
             <div class="cliente">
-              <img src="/img/caras/0x0.webp" alt="Cliente 2">
+              <img src="./img/caras/0x0.webp" alt="Cliente 2">
             </div>
             <div class="cliente-mensaje">
               <p>play & sing es increible, un saludo para mi novia taylor muak muak</p>
@@ -136,10 +142,10 @@
 
           </div>
 
-          <div class="comentario">
+          <div class="comentario fx-row">
 
             <div class="cliente">
-              <img src="/img/caras/926572ba6446ce2375d996.24992132_-1.jpg" alt="Cliente 3">
+              <img src="./img/caras/926572ba6446ce2375d996.24992132_-1.jpg" alt="Cliente 3">
             </div>
             <div class="cliente-mensaje">
               <p>simplemente soy mejor artista que taylor swift</p>
@@ -157,10 +163,53 @@
 
   </main>
 
-  <footer id="footer">
-    <h1 style="font-size: 50px; color: #000000;">Formulario de contactos</h1>
-    <h3 style="font-size: 40px; color: #000000;">Contactos adicionales | Redes sociales</h3>
+  <footer id="footer" class="fx-column fx-content-center fx-align-items-center">
+
+    <div class="contacto-container">
+
+      <h2>Contacto</h2>
+
+      <form id="contacto-form" class="fx-column">
+
+        <input type="text" id="nombre" placeholder="Nombre" required>
+
+        <input type="email" id="email" placeholder="Email" required>
+
+        <textarea id="mensaje" placeholder="Mensaje" required></textarea>
+
+        <button type="submit" class="btn">Enviar</button>
+
+      </form>
+
+    </div>
+
+    <div class="redes-sociales">
+      <ul>
+        <li>
+          <a href="#">
+            <img src="./img/mine/facebook-circle.svg" alt="Facebook">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/mine/43-twitter-512.webp" alt="Twitter">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/mine/insta2.png" alt="Instagram">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./img/mine/youtube.svg" alt="Youtube">
+          </a>
+        </li>
+      </ul>
+      </div>
+
     <p>play & sing &copy; 2023</p>
+
   </footer>
 
   <button id="btn-ir-arriba" >
